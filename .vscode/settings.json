@@ -1,0 +1,40 @@
+{
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-pdf",
+        "-interaction=nonstopmode",
+        "-synctex=1",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "latexmk-clean",
+      "command": "latexmk",
+      "args": [
+        "-c"
+      ]
+    },
+    {
+      "name": "cleanup-gz",
+      "command": "./.vscode/cleanup.sh",
+      "args": []
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (pdf + clean + rm gz)",
+      "tools": [
+        "latexmk",
+        "latexmk-clean",
+        "cleanup-gz"
+      ]
+    }
+  ],
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.path": "latexindent",
+  "editor.formatOnSave": true,
+  "latex-workshop.latex.outDir": "."
+}
