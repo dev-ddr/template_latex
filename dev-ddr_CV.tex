@@ -1,4 +1,5 @@
 
+% region Prologue
 \documentclass[a4paper,24pt]{article}
 
 \usepackage{latexsym}
@@ -64,7 +65,7 @@
 
 \newcommand{\resumeItemWithoutTitle}[1]{
   \item\small{
-    {\vspace{-2pt}}
+    {\vspace{-2pt}}>
   }
 }
 
@@ -86,45 +87,32 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
 %-----------------------------
 %%%%%%  CV STARTS HERE  %%%%%%
 
+% endregion
+
 \begin{document}
 
-
-%----------HEADING-----------------
-%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%\textbf{{\LARGE Darshan Rathod}} & Email: darshan.rathod1994@gmail.com\\
-%~~Interdisciplinary Centre for Energy Research (ICER) &  IISc Email: darshanr@iisc.ac.in\\
-%~~Indian Institute of Science, Bangalore & Mobile:~+91-7042958333 \\
-%~~ & ~~~~~~~~~~~~9426946052 \\
-%\end{tabular*}
-
+% region Header
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-	\textbf{{\LARGE Dr. Darshan Rathod}}	&	\\
-	~~Email: darshan.rathod1994@gmail.com	& Linkedin: \url{www.linkedin.com/in/dev-ddr}	\\
-	~~Mobile:~+91-7042958333, 9426946052	& Website: \url{https://dev-ddr.github.io}	\\
+  \textbf{{\LARGE Dr. Darshan Rathod}}	&	\\
+  ~~Email: darshan.rathod1994@gmail.com	& Linkedin: \url{www.linkedin.com/in/dev-ddr}	\\
+  ~~Mobile:~+91-7042958333, +91-9426946052	& Website: \url{https://dev-ddr.github.io}	\\
 \end{tabular*}
+% endregion
 
-
-
-%-----------Research Topic-----------------
-% \section{Research Project}
-% \resumeSubHeadingListStart
-% \resumeItem{Detailed Diagnostics in Single Cup Sector of Modern Annular Gas Turbine Combustor}{The project is envisioned to relate various global thermo-physical parameters with local events in real scale $20^{\circ}$ sector of Gas turbine combustor, with application of modern state-of-the-art facilities to understand the generation of global phenomena developing from local event interactions.}
-% \resumeSubHeadingListEnd
-% \vspace{-5pt}
-
-
-%-----------EDUCATION-----------------
+% region Education
 \section{Education}
 \resumeSubHeadingListStart
 
 \resumeSubheading{Indian Institute of Science}{Bengaluru, India}{PhD + M.Tech (Res), ICER; GPA: 8.6}{2018 - 2024}
+\vspace{0pt}
 
 \textbf{Advisors:} Prof. Saptarshi Basu, Dr. Pratikash Panda
-\newline
-\textbf{Thesis title:} Design and diagnostics of gas turbine combustors: from high shear injector to full-scale sector of annular combustor
+
+\textbf{Thesis title:} Design and diagnostics of gas turbine combustor: from high shear injector to full-scale sector of annular combustor
 
 
 \resumeSubheading{Sardar Vallabhbhai National Institute of Technology}{Surat, India}{Bachelor of Technology - Mechanical Engineering;  GPA: 8.7}{2012 - 2016}
@@ -132,41 +120,44 @@
 \resumeSubHeadingListEnd
 \vspace{-5pt}
 
-\section{Fellowships \& Awards}
-\resumeSubHeadingListStart
+% endregion
 
-\resumeSubheading{Fujitsu Grand Award}{Fujitsu, Bengaluru}{As a team, developed a method for improving the safegurading of an LLM}{Jun-2025}
-
-\resumeSubheading{PMRF}{IISc, Bengaluru}{Awarded the prestigious Prime Minister Research Fellowship}{2018-2023}
-
-\resumeItemListEnd
-
-%-----------Experience-----------------
-\section{Experience}
+% region Experience
+\section{Professional Experience}
 \resumeSubHeadingListStart
 
 \resumeSubheading{Fujitsu Research of India Pvt. Ltd.}{Bengaluru, India}
-{Senior Researcher}{Aug 2024 - Present}
+{Senior Researcher, AI security}{Aug 2024 - Present}
 \resumeItemListStart
-\resumeItem{}{Developed a gradient based methods to improve the defense of LLM against adversarial attacks. Methods reduces the ASR from 80$\sim$90\% to $\sim$10\%.}
-\resumeItem{}{Worked on Knowledge graph based prompt creation to augment red-teaming }
-\resumeItem{}{Endurance testing of a specific part or system of vehicle. Specifications testing for new suppliers.}
-\resumeItem{}{Characterization of competitors vehicle and engine, Accounting of production errors in development of engine; Market survey for customer feedback on applied vehicle development.}
+\resumeItem{Red-teaming}{Apply various white-box and black-box methods to identify the vulnerabilities in LLMs.}
+\resumeItem{Defense development}{Develop novel strategies to defend against adversarial attacks on LLMs.}
+\resumeItem{Agentic AI}{Augment the safety for agentic-AI systems through rigorous red-teaming and defense development.}
+\resumeItem{Mechanistic Interpretability}{Understanding how models work internally by examining on various levels from neurons to layers and apply the findings in development of novel defenses.}
 \resumeItemListEnd
+
+\resumeSubheading{Indian Institute of Science}{Bengaluru, India}
+{PhD in Gas turbine Combustor flow dynamics and combustion instabilities}{Aug 2018 - July 2024}
+\resumeItemListStart
+\resumeItem{DRDO Project}{Sole PhD student leading the team of two project-staff in the GTRE, DRDO project on gas turbine combustor research, under the guidance of Prof. Saptarshi Basu and Dr. Pratikash Panda.}
+\resumeItem{Rig Development}{Designed and developed a high-pressure (upto 20 bars) and high-mass flow rate (upto 1.5 kg/s) sector rig for gas turbine combustors. The Salient features of rig involves to-the-scale core components of combustor, optical access to primary and exhaust zones, remote rig operation, high-speed data acquisition.}
+\resumeItem{Experimental Diagnostics}{Application of advanced diagnostics tools such as high-speed PIV and OH* chemiluminescence for flow and combustion diagnostics in challenging environments of gas turbine combustors.}
+\resumeItem{Data Analysis}{Apply advanced data analysis tools like POD, DMD, spectral-POD, recurrence analysis etc. on the experimental data to understand intricate thermo-physical processes undergoing within the combustor.}
+\resumeItemListEnd
+
 
 \resumeSubheading{Honda R \& D India Pvt. Ltd.}{Gurugram, India}
 {Research Engineer}{July 2016 - July 2018}
 \resumeItemListStart
-\resumeItem{}{Development and testing of IC engine for BS-IV emission norms with optimizing driveability and mileage. Optimizing the fuel supply system with consideration of diverse Indian environment.}
-\resumeItem{}{Development of race engine specific power (kW/kg).}
-\resumeItem{}{Endurance testing of a specific part or system of vehicle. Specifications testing for new suppliers.}
-\resumeItem{}{Characterization of competitors vehicle and engine, Accounting of production errors in development of engine; Market survey for customer feedback on applied vehicle development.}
+\resumeItem{Emission and Performance optimization}{Development and testing of IC engine for BS-IV emission norms with optimizing driveability and mileage. Optimizing the fuel supply system considering diverse Indian environment.}
+\resumeItem{Race Engine optimization}{Development of race engine specific power (kW/kg) by changing engine parameters like ignition timings, valve timings etc.}
+\resumeItem{Endurance testings}{Endurance testing of a specific part or system of vehicle. Specifications testing for new suppliers.}
+\resumeItem{Benchmarking}{Characterization of competitors vehicle and engine, Accounting of production errors in development of engine; Market survey for customer feedback on applied vehicle development.}
 \resumeItemListEnd
 
 \resumeSubheading{Schneider Electric}{Vadodara, India}
 {Intern}{May 2015 - June 2015}
 \resumeItemListStart
-\resumeItem{}{Parts and tools storage system was manufactured for improvement in ergonomics of production line staff. Setup was conpact and could sustain the high loads of tools and parts.}
+\resumeItem{Tools storage system}{Designed and developed tools storage system for improvement in ergonomics of production line staff. The compact Setup could sustain the high loads of tools and parts.}
 \resumeItemListEnd
 
 \resumeSubheading{Thermal Power Station}{Jamnagar, India}
@@ -177,11 +168,60 @@
 \resumeSubHeadingListEnd
 \vspace{-5pt}
 
-%\end{multicols}
+% region end
+
+% region Projects
+\section{AI and Datascience Projects}
+\resumeSubHeadingListStart
+
+\resumeItem{SafeQuant:-}{As a team, developed a gradient based methods to improve the defense of LLM against adversarial attacks. Methods reduces the ASR from 80$\sim$90\% to $\sim$10\%. Lead the team in integration of the method to Fujitsu's guardrail system to be used in production.}
+\resumeItem{Agentic AI:-}{Leading a team, in development of agentic system which could automatically add novel attacks and defences to Fujitsu's guardrail system, reducing significant manual labour involved in the process.}
+\resumeItem{RL based prompt gen}{Generating the sequence of prompts in multi-turn conversation which could surreptitiously prompt LLM to generate malicious content.}
+\resumeItem{Text-to-KG}{Developed a method which could generate knowledge graph (KG) from text description. This pipeline is later used in generating prompts for Red-teaming approach.}
+\resumeItem{Gradient based prompt gen}{Developed a method which could generate a prompt from random initial tokens for a target response, through loss propagation to the prompt.}
+
+\resumeItem{C1-Terminal}{Participated in the C1-terminal competition, wherein the task was to develop a code which can compete against other team's code in a game.}
+\resumeItem{I4AM'24 Robotics Challange}{Secured 3rd position in the competition, wherein the task was to design a robot given the}
+
+\resumeItem{Teaching python}{Tought Python programming to first year students from Jan-2021 to Dec-2023 at Ramaiah Polytechnic College, Bengaluru India.}
+\resumeItem{Experimental control sysntem}{Developed using Tkinter, which can control inlet conditions of combustor remotely at high-mass flow rates and high-pressures. Code integrates various hardware like NI cDAQ-9174, ALICAT mass flow controller, arduino and mobile camera for controlling and data acquisition of experimental parameters.}
+\resumeItem{Design and manufacturing of setup for visualization of wave motion phenomena }{Two bodies which are in-phase, out-of-phase or in resonance can be demonstrated using the setup.}
+
+\resumeItem{Design of smart home system}{AI controlled system using ESP-8266 was developed which could switch state with voice commands.}
+\resumeItem{Lab plan development}{Developed an experimental facility at ICER, IISc for conducting challenging experiments remotely in isolation of experimental rig from user and sensitive equipments.}
+
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+% endregion
+
+% region Projects
+\section{Opensource Projects}
+\resumeSubHeadingListStart
+
+\resumeItem{Finmetry}{Developed a pipeline for algorithmic trading strategy backtesting. The project is available at \url{https://github.com/dev-ddr/finmetry}.}
+\resumeItem{ddr-analysis-tools}{Developed codes for experimental data analysis using POOD, sPOD, recurrence analysis, Fourier analsis etc. The project is available at \url{https://github.com/dev-ddr/ddr-analysis-tools}.}
+\resumeItem{ddr-davis-data}{Developed codes for experimental data analysis using POOD, sPOD, recurrence analysis, Fourier analsis etc. The project is available at \url{https://github.com/dev-ddr/ddr-analysis-tools}.}
+\resumeItem{ddr-mfc}{Developed a code to control Alicat mass flow controller. The project is available at \url{https://github.com/dev-ddr/ddr-mfc}.}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
 
 
+% endregion
 
-%-----------PUBLICATIONS-----------------
+% region Fellowships and awards
+\section{Fellowships \& Awards}
+\resumeSubHeadingListStart
+
+\resumeSubheading{Fujitsu Grand Award}{Fujitsu, Bengaluru, India}{As a team, developed a method for improving the safegurding of an LLM}{Jun-2025}
+
+\resumeSubheading{PMRF}{IISc, Bengaluru, India}{Awarded the prestigious Prime Minister Research Fellowship}{2018-2023}
+
+\resumeItemListEnd
+% endregion
+
+% region Publications
 \section{Publications}
 \resumeSubHeadingListStart
 \resumeSubItem{}{Darshan D. Rathod, Samprada S. Kumbhare, Swetaprovo Chaudhuri, Pratikash Panda, Saptarshi Basu and Dalton Maurya. "Design of an optically accessible single cup sector of a full-scale annular gas turbine combustor," AIAA 2023-1062. AIAA SCITECH 2023 Forum. January 2023. \url{https://doi.org/10.2514/6.2023-1062}}
@@ -197,40 +237,6 @@
 \resumeSubHeadingListEnd
 %\vspace{-5pt}
 
-
-%-----------PROJECTS-----------------
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{Development of Python GUI for experiment control system}{Tkinter python code developed for control and data acquisition from NI DAQ. Code integrates various hardware like NI cDAQ-9174, ALICAT mass flow controller, arduino and mobile camera for controlling and data acquisition of experiment.}
-\vspace{2pt}
-
-\resumeSubItem{Design and manufacturing of setup for visualization of wave motion phenomena }{Two bodies which are in-phase, out-of-phase or in resonance can be demonstrated using the setup.}
-\vspace{2pt}
-
-% \resumeSubItem{Design of smart home system}{AI controlled system using ESP-8266 was developed which could switch state with voice commands.}
-% \vspace{2pt}
-
-% \resumeSubItem{Lab plan development}{Experimental facility was developed for isolation of experimental rig from user and sensitive equipment.}
-% \vspace{2pt}
-\resumeSubHeadingListEnd
-\vspace{-5pt}
-
-%-----------skills-----------------
-\section{Skills}
-\resumeSubHeadingListStart
-\resumeSubItem{Designing Software}{: Solidworks, CATIA}
-\resumeSubItem{Programming Languages}{: Python, MATLAB}
-\resumeSubItem{Soft Skills}{: Team Management, Resource \& Inventory Management}
-\resumeSubItem{Tools}{: matplotlib for plotting, scikit-learn for ML, numpy and pandas for data processing, Tkinter for GUI development, cantera for gas properties calculations}
-\resumeSubItem{Experimental Skills}{: Particle Image Velocimetry (PIV), Stereo-PIV, Shadowgraphy, Handling High Speed cameras and Lasers}
-
-\resumeSubHeadingListEnd
-\vspace{-5pt}
-
-
-
-
-
-
+% region end
 
 \end{document}
